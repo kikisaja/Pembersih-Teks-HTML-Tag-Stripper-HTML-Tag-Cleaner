@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tag Cleaner 🧹</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <!-- Header -->
+        <header class="app-header">
+            <span class="badge">kikisaja No. 152</span>
+            <h1>🧹 HTML TAG CLEANER</h1>
+            <p>Hapus semua tag HTML dan sisakan teks polos dengan cepat!</p>
+        </header>
+
+        <!-- Input Area -->
+        <div class="input-section">
+            <label for="html-input">Masukkan Kode / Teks Ber-HTML:</label>
+            <textarea id="html-input" placeholder="Contoh: &lt;h1&gt;Halo Dunia!&lt;/h1&gt; &lt;p&gt;Ini teks &lt;b&gt;tebal&lt;/b&gt;.&lt;/p&gt;">&lt;h1 style="color:red;"&gt;Selamat Datang di RPL!&lt;/h1&gt;&lt;p&gt;Jurusan &lt;strong&gt;Software Engineering&lt;/strong&gt; sangat keren.&lt;/p&gt;</textarea>
+        </div>
+
+        <button type="button" id="btn-clean" class="btn-clean">✨ BERSIHKAN TAG HTML</button>
+
+        <!-- Output Area -->
+        <div class="output-section">
+            <div class="output-header">
+                <label for="plain-output">Hasil Teks Polos (Plain Text):</label>
+                <button type="button" id="btn-copy" class="btn-copy">📋 Salin Teks</button>
+            </div>
+            <textarea id="plain-output" readonly placeholder="Hasil teks bersih akan muncul di sini..."></textarea>
+        </div>
+
+        <!-- Toast Notification -->
+        <div id="toast" class="toast hidden">Teks bersih berhasil disalin! 🚀</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
